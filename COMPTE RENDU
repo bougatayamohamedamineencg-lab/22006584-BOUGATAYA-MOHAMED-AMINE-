@@ -1,0 +1,112 @@
+# 📝 COMPTE RENDU  
+## Analyse du Comportement des Consommateurs
+
+---
+
+## 1. Introduction
+
+L’objectif de cette étude est d’analyser les comportements d’achat des consommateurs,  
+d’identifier des segments homogènes, et d’explorer les relations entre variables telles que :
+
+- l’âge  
+- les montants d'achat  
+- la satisfaction  
+- l’historique des achats  
+
+---
+
+## 2. Analyse descriptive
+
+### 2.1 Données démographiques
+
+- L’échantillon contient une large diversité d’âges, répartis de manière relativement uniforme.  
+- Les groupes d'âge utilisés *(18–30, 31–45, 46–60, 60+)* facilitent l'analyse comportementale.  
+- La variable **Gender** montre une répartition équilibrée.
+
+---
+
+### 2.2 Comportement d’achat
+
+- Les montants d’achat varient mais suivent une distribution assez régulière.  
+- Les notes attribuées (**Review Rating**) sont fortement concentrées vers les valeurs élevées, indiquant une satisfaction globale élevée.  
+- Le nombre de **Previous Purchases** est relativement homogène, révélant un mélange équilibré entre nouveaux et anciens clients.
+
+---
+
+### 2.3 Performance par catégorie
+
+Les catégories de produits présentent des différences nettes :
+
+- Certaines génèrent un **volume de ventes élevé**.  
+- D’autres produisent **plus de revenus par achat**.  
+- Les **moyennes de satisfaction** varient légèrement selon la catégorie.
+
+---
+
+### 2.4 Répartition saisonnière
+
+- L’analyse révèle des **pics de revenus selon les saisons**.  
+- Certains produits affichent un comportement **fortement saisonnier**.
+
+---
+
+## 3. Analyse statistique
+
+### 3.1 Corrélation entre variables numériques
+
+La matrice de corrélation met en évidence :
+
+- Des corrélations **très faibles** entre les variables :
+  - Âge ↔ Montant d’achat : ≈ 0  
+  - Previous Purchases ↔ Review Rating : ≈ 0  
+- Aucune relation linéaire forte entre les variables continues.
+
+👉 **Conclusion** :  
+Les comportements d’achat ne s’expliquent pas par des relations linéaires simples, ce qui suggère une complexité comportementale plus élevée.
+
+---
+
+## 4. Visualisation et distributions
+
+### 4.1 Histogrammes
+
+- **Âge** : répartition large, sans pic dominant  
+- **Purchase Amount** : distribution en cloche, peu d’outliers  
+- **Review Rating** : distribution fortement positive (notes 4–5 dominantes)  
+- **Previous Purchases** : grande dispersion, combinant nouveaux et clients fidèles  
+
+✅ Ces résultats confirment une **base client hétérogène mais globalement satisfaite**.
+
+---
+
+## 5. Segmentation (Clustering)
+
+Une segmentation en **4 clusters** via l’algorithme **K-means** a été réalisée.
+
+Les clusters se distinguent selon :
+
+- le niveau de dépense  
+- l’ancienneté du client  
+- la satisfaction moyenne  
+- l’âge  
+
+🎯 **Applications possibles** :
+- Programmes de fidélisation  
+- Ciblage marketing  
+- Recommandations personnalisées  
+
+---
+
+## 6. Conclusion
+
+Cette étude met en évidence :
+
+- Une clientèle **diversifiée et majoritairement satisfaite**  
+- L’absence de relations linéaires simples, traduisant des **comportements complexes**  
+- Des différences marquées selon les **catégories de produits** et les **saisons**  
+- Des **segments clients exploitables** pour le marketing stratégique  
+
+🔍 La base de données est adaptée au développement de modèles avancés :  
+*Random Forest, clustering, classification, modèles prédictifs.*
+
+---
